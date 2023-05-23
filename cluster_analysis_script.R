@@ -1,6 +1,7 @@
 # 1: DATA AND LIBRARIES ----
 
 # * Load libraries ----
+library(tidyverse)
 library(ggplot2)
 library(ggbiplot)
 library(recipes)
@@ -14,7 +15,7 @@ set.seed(100)
 # * Load RDS files ----
 # ** dclust_vars_tbl ----
 dclust_vars_tbl <- read_rds(
-  "Z:/Research On/Peer Institution Cluster Analysis/2023 Updated Analysis Prep/RDS/dclust_vars_tbl.rds"
+  "F:/Work Stuff/air2023peeraspirantcluster/dclust_vars_tbl.rds"
 ) %>% 
   as_tibble()
 

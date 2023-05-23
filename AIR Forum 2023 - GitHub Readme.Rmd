@@ -1,0 +1,45 @@
+---
+title: 'AIR Forum 2023: Integrating Cluster Analysis to Select Peer and Aspirant Comparison Groups'
+author: "University of West Florida Institutional Research"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+## Introduction
+
+In this document, we will demonstrate the process of performing a cluster analysis on IPEDS data. Using this document as a guide, your office should also be able to perform a cluster analysis using R. To run this analysis, we will use the most up to date IPEDS data available in the IPEDS Data Center as of the drafting of the document (June 2023), labeling this data 'ipeds_data_tbl'. Examples shown in this document will use our data file, but the user is free to use any IPEDS data or perhaps data from other locations to run their analyses.
+
+The main objective of this analysis is to identify peer and aspirant comparison groups. Clustering is a powerful unsupervised learning technique that allows us to identify structure in our data. For our purposes, we will use the K-means clustering algorithm.
+
+## Load Required Packages
+First, we need to load the required packages for our analysis. The packages include tidyverse for data manipulation and cluster for clustering analysis.
+
+```{r}
+# Load libraries
+library(tidyverse)
+library(ggplot2)
+library(ggbiplot)
+library(recipes)
+library(factoextra)
+```
+
+```{r eval=FALSE}
+ipeds_data_tbl <- read.csv(
+  "[insert file path here].csv"
+) %>% 
+  as_tibble()
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

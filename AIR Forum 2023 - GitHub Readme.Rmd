@@ -1,7 +1,10 @@
 ---
-title: 'AIR Forum 2023: Integrating Cluster Analysis to Select Peer and Aspirant Comparison Groups'
+title: 'AIR Forum 2023: Integrating Cluster Analysis to Select Peer and Aspirant Comparison
+  Groups'
 author: "University of West Florida Institutional Research"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
